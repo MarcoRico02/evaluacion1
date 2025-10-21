@@ -16,6 +16,7 @@
         <activity android:name=".Onboarding2Activity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".WelcomeActivity" />
+        <activity android:name=".ProfileActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

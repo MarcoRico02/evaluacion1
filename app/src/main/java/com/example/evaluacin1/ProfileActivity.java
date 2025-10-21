@@ -6,13 +6,30 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
+import android.widget.TextView;
 
 public class ProfileActivity extends AppCompatActivity {
+
+    private TextView tvUsername, tvGamesPlayed, tvFavoriteGame, tvAchievements;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
+
+        // Referencias
+        tvUsername = findViewById(R.id.tvUsername);
+        tvGamesPlayed = findViewById(R.id.tvGamesPlayed);
+        tvFavoriteGame = findViewById(R.id.tvFavoriteGame);
+        tvAchievements = findViewById(R.id.tvAchievements);
+
+        // Datos hardcodeados
+        String username = getIntent().getStringExtra("USERNAME");
+        if(username == null) username = "Alumno";
+        tvUsername.setText("Usuario: " + username);
+        tvGamesPlayed.setText("Juegos jugados: 12");
+        tvFavoriteGame.setText("Juego favorito: Celeste");
+        tvAchievements.setText("Logros desbloqueados: 5/10");
     }
 
     // Abrir cámara
