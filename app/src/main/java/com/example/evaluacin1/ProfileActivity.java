@@ -47,7 +47,7 @@ public class ProfileActivity extends AppCompatActivity {
 
     // Obtener ubicación (abre Google Maps)
     public void openLocation(View v) {
-        String geoUri = "geo:0,0?q=Indie+Games";
+        String geoUri = "geo:0,0?q=C. Calera 45, Zacatecas, 21070 Mexicali, B.C.";
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(geoUri));
         startActivity(intent);
     }
