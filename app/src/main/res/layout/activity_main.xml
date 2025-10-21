@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#101010"
+    android:gravity="center"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@drawable/ic_gamepad"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:contentDescription="Icono" />
+
+    <TextView
+        android:text="Bienvenido a IndieVerse"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Explora el mundo de los videojuegos independientes."
+        android:textColor="#AAAAAA"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:onClick="goNext"
+        android:text="Siguiente"
+        android:layout_marginTop="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:onClick="skip"
+        android:text="Saltar"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
